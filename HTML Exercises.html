@@ -6,8 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>HTML Exercises</Title>
     </head>
+    <style>
+      body{
+        background-color: rgb(83, 123, 158);
+        text-align: center;  
+        background-image:url(yaskwin.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .centerTable{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      figure{
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
 
-    <body>
+    <body> 
       <header>
         <nav>
           <ul>
@@ -19,10 +36,12 @@
         <h1>Yas-Kween</h1></header>
                  
       <figure>  
-        <img src="https://th.bing.com/th/id/OIP.UYcMHXGBkrs-pMvolqCQfwHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="This is Kween Yasmin kung wala kang load">
-        <figcaption>Ms. Yasmin Marie Asistido</figcaption>
+        <img src="yasmin'.jpg" alt="This is Ms. Esophagus">
+        <figcaption><h4>Ms. Yasmin Marie Asistido <h4></h4></figcaption>
       <figure>
-      
+      <br>
+      <br>
+
         <form id="User Form"></form>
           <fieldset>
             <h3>User Information </h3>
@@ -31,11 +50,13 @@
             id="name"
             name="name" required pattern="[A-Za-z]+">
             <br>
-            
+            <br>
+
             <label for="email">Email :</label>
             <input type="email"
             id="email"
             name="email"required>
+            <br>
             <br>
 
             <label for="password">Password:</label>
@@ -57,7 +78,7 @@
             <label for="genderFemale">Female</label>
             <br>
             <br>
-            <label for="terms">I Agree to the <a href="#">terms and conditions</a>.</label>
+            <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
             <input type="checkbox"
             id="terms"
             name="terms"required>
@@ -69,37 +90,38 @@
         </form>
         <br>
  
-      <fieldset>
-        <h3>Table</h3>
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Cyrine H. Acedera</td>
-                <td>21</td>
-                <td>Baguio City</td>
-              </tr>
-              <tr>
-                <td>Kween C. Yasmin</td>
-                <td>25</td>
-                <td>Mars City</td>
-              </tr>
-              <tr>
-                <td>Dora D. Explorer</td>
-                <td>14</td>
-                <td>Jungle City</td>
-              </tr>
-            </tbody>
-          </table>
-      </fieldset>
-      <br>
+
       
+        <h3>Table</h3>
+
+        <table class="centerTable" border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cyrine H. Acedera</td>
+              <td>21</td>   
+              <td>Baguio City</td>
+            </tr>
+            <tr>
+              <td>Kween C. Yasmin</td>
+              <td>25</td>
+              <td>Mars City</td>
+            </tr>
+            <tr>
+              <td>Dora D. Explorer</td>
+              <td>14</td>
+              <td>Jungle City</td>
+            </tr>
+          </tbody>
+        </table>
+      <br>
+  
     <h3>Audio and Video</h3>
     
     <audio controls>
