@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>HTML Exercises</Title>
-    </head>
+    
     <style>
       body{
         background-color: rgb(83, 123, 158);
@@ -17,12 +16,23 @@
       .centerTable{
         margin-left: auto;
         margin-right: auto;
+        
+      }
+      .centerTable td{
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .CenterTable{
+        margin-left: auto;
+        margin-right: auto;
       }
       figure{
         display: block;
         margin: 0 auto;
       }
     </style>
+
+  </head>
 
     <body> 
       <header>
@@ -33,55 +43,49 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h1>Yas-Kween</h1></header>
-                 
-      <figure>  
+        <h1>Yas-Kween</h1>
+      </header>
+                   
         <img src="yasmin'.jpg" alt="This is Ms. Esophagus">
-        <figcaption><h4>Ms. Yasmin Marie Asistido <h4></h4></figcaption>
-      <figure>
+      <figure>  
+        <figcaption>
+          <h4>Ms. Yasmin Marie Asistido</h4>
+        </figcaption>
+      </figure>
       <br>
       <br>
-
-        <form id="User Form"></form>
+        <form action="FormId">
           <fieldset>
             <h3>User Information </h3>
-            <label for="name">Name:</label>
-            <input type="text" 
-            id="name"
-            name="name" required pattern="[A-Za-z]+">
+            <label for="name">Name:</label><input type="text" id="name" name="name" required pattern="[A-Za-z]+">
             <br>
             <br>
 
             <label for="email">Email :</label>
-            <input type="email"
-            id="email"
-            name="email"required>
+            <input type="email" id="email" name="email" required>
             <br>
             <br>
 
             <label for="password">Password:</label>
-            <input type="password"
-            id="password" minlength="8"required>
+            <input type="password" id="password" minlength="8" required>
+            <br>
+            <br>
+          <table class="CenterTable">
+            <tr>
+              <td>
+                <label for="genderMale">Gender:</label>
+                <input type="radio" id="genderMale" name="gender" value="male" required>
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderFemale" name="gender" value="female">
+                <label for="genderFemale">Female</label>
+              </td>
+            </tr>
+          </table>
+            <br>
             <br>
 
-            <label for="gender">Gender:</label>
-            <input type="radio"
-            id="genderMale"
-            name="gender"
-            value="male"required>
-
-            <label for="genderMale">Male</label>
-            <input type="radio"
-            id="genderFemale"
-            name="gender"
-            value="female">
-            <label for="genderFemale">Female</label>
-            <br>
-            <br>
             <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
-            <input type="checkbox"
-            id="terms"
-            name="terms"required>
+            <input type="checkbox" id="terms" name="terms" required>
             <br>
             <button type="submit">Submit</button>
             <br>
@@ -89,12 +93,9 @@
           </fieldset>
         </form>
         <br>
- 
 
-      
         <h3>Table</h3>
-
-        <table class="centerTable" border="1">
+        <table class="centerTable">
           <thead>
             <tr>
               <th>Name</th>
@@ -125,23 +126,21 @@
     <h3>Audio and Video</h3>
     
     <audio controls>
-      <source src="Spoken Poetry ( SELOS - Kween Yasmin ).mp3">
+      <source src="Spoken.mp3">
     </audio>
     <br>
     <br>
     <iframe width="560" 
     height="315" src="https://www.youtube.com/embed/KQ4qfpDOZE0?si=uvivt93nGjGTqNQL" 
-    title="YouTube video player" frameborder="0" 
+    title="YouTube video player" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe>
   <br>
   <br>
-  <a href="https://www.metroscenemag.com/2021/05/kween-yasmin-interview.html">Read the Kween Yasmin Interview</a>
 
   <br>
   <br>
   <br>
   <footer><h4>Copyright© 2024. Jesting Permitted, Stealing Kween's poetry not </h4></footer>
     </body>
-
 </html>  
