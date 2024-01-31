@@ -3,75 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basta Webpage</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <style>
+        .navbar{
+            margin-bottom: 20px;
+        }
+
+        .tab-content > .tab-pane{
+            display: none;
+        }
+        .tab-content > .tab-pane:first-child{
+            display: block;
+        }
+
+        form{
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        form label{
+            display: block;
+            margin-bottom: 5px;
+
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"],
+        form input [type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3 px;
+
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+     </style>
 </head>
 <body>
-    <header style="background-color: #333; color: #fff; padding: 10px;">
-        <h1>Welcome to Basta Magiging Website to later</h1>
-        <nav>  
-            <button onclick="scrollToSection('Section 1')">Section 1</button>
-            <button onclick="scrollToSection('Section 2')">Section 2</button>
-            <button onclick="scrollToSection('Section 3')">Section 3</button>
-        </nav>
-    </header>
     <script>
-        function scrollToSection(sectionId){
-            const section = document.getElementById(sectionId);
-            if (section){
-                section.scrollIntoView({behavior:"smooth"});
-            }
-        }
-    </script>
-    <main>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabLinks = document.querySelectorAll('.nav-link');
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            tabLinks.forEach(tab => {
+                tab.addEventListener('click', (event) => {
+                    event.preventDefault();
 
-            <label for="age">Age:</label><br>
-            <input type="number" id="age" name="age" min="18" max="99" required><br>
+                    tabLinks.forEach(tab => tab.classList.remove('active'));
+                    event.target.classList.add('active');
 
-            <label for="dob">Date of Birth:</label><br>
-            <input type="date" name="dob" id="dob" required><br>
+                    const targetSectionId = event.target.getAttribute('data-target').substring(1);
+                    const sections = document.querySelectorAll('.tab-pane');
+                    sections.forEach(section => section.classList.remove('show', 'active'));
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" pattern=".{8,}" required><br>
-            <br>
-            <input type="submit" value="Submit"><br>
-        </form>
-        <div id="confirmationMessage" style="display: none;">Form submitted successfully!</div>
-        <script>
-            $(document).ready(function() {
-                $("#myForm").on("submit", function(event){
-                event.preventDefault();
-                $("#confirmationMessage").show();
-                console.log("Form submitted:", $(this).serialize());
+                    const targetSection = document.getElementById(targetSectionId);
+                    const tabContent = new bootstrap.Tab(targetSection);
+                    tabContent.show();
+                });
             });
         });
         </script>
-        <section id="Section 1">
-            <h2>Section 1</h2>
-            <p>Wala pang content to kasi sample palang</p>
-        </section>
-        <section id="Section 2"></section>
-        <h2>Section 2</h2>
-        <p>Mapa ng Baguio</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61240.06971607285!2d120.58874254999998!3d16.399191949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a113c98366bf%3A0xc1add28ad4d5f164!2sBaguio%20City%2C%20Baguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1706692520778!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <section id="meme">
-        <h2>Meme of the Day</h2>
-        <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">Meme of the day 😂<br>.<br>Meanwhile uses of our college degree. 😂<br>.<a href="https://twitter.com/hashtag/weekend?src=hash&amp;ref_src=twsrc%5Etfw">#weekend</a> <a href="https://twitter.com/hashtag/meme?src=hash&amp;ref_src=twsrc%5Etfw">#meme</a> <a href="https://twitter.com/hashtag/weekendfun?src=hash&amp;ref_src=twsrc%5Etfw">#weekendfun</a> <a href="https://twitter.com/hashtag/memeoftheday?src=hash&amp;ref_src=twsrc%5Etfw">#memeoftheday</a> <a href="https://t.co/Ud9jpcOryY">pic.twitter.com/Ud9jpcOryY</a></p>
-            &mdash; Ritik kumar (@itsuidesigner) <a href="https://twitter.com/itsuidesigner/status/1751094961586741758?ref_src=twsrc%5Etfw">January 27, 2024</a>
-        </blockquote> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
-        <script src="script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Basta Webpage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    </main>
+    <div class="tab-content">
+        <div id="intro" class="tab-pane">
+            <h2>Introduction</h2>
+            <p>edit ko to later basta intro to</p>
+        </div>
+
+    <div id="about-me" class="tab-pane">
+        <h2>About Me</h2>
+            <p>Here's some information about me:</p>
+                <ul>
+                    <li>Cyrine H. Acedera</li>
+                    <li>Lives in Baguio City</li>
+                    <li>I am 21 years old</li>
+                    <li>Studying at the University of the Cordilleras</li>
+                    <li>Network and Security Track student</li>
+                    <li>Enjoys traveling and sleeping</li>
+                </ul>           
+        </div>
+        <div id="section3" class="tab-pane">
+            <h2>Contact Me</h2>
+            <p>Third section ng webpage naman itu</p>
+        </div>
+    </div>
+    <form>
+        <h2>Registration Form</h2>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" name="pswd2" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone" pattern="639[0-9]{9}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script>
+        $(document).ready (function(){
+            $(.'navbar-toggler').on ('click', function(){
+               $('#navbarNav').collapse('toggle');
+            });
+        });    
+    </script>
 </body>
 </html>
