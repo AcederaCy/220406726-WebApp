@@ -1,19 +1,43 @@
-function scrollToSection(sectionId){
-    const section = document.getElementsById(sectionId);
-    if (section){
-        section.scrollToView({behavior:"smooth"});
-    }
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const tabLinks = document.querySelectorAll('.navlink');
 
-function handleFormSubmission(event){
-    event.prevent.Default();
+    tabLinks.forEach(tab => {
+        tab.addEventListener('click', (event ) => {
+            event.preventDefault();
 
-    const form = document.getElementById('myForm');
-    const formData = new FormData(form);
+            tabLinks.forEach(tab => tab.classList.remove ('active'));
+            event.target.classList.add('.active');
 
-    if (form.checkValidity()){
-        document.getElementById('confirmationMessage').style.display = 'block';
-    } else {
-        alert('Please fill out all the required fields')    
-    }
+            const targetSectionId = event.target.getAttribute('data-target').substring(1);
+            const sections = document.querySelectorAll('.tab-pane');
+            sections.forEach(section => section.classList.remove('show', 'active'));
+
+            const targetSection = document.getElementById(targetSectionId);
+            const tabContent = new bootstrap.Tab(targetSection);
+            tabContent.show();
+
+        });
+    });
+
+});
+
+$(document).ready(function() {
+    $(',navbar-toggler').on ('click', function() {
+        $('#navbarNav').collapse('toggle');
+
+    });
+});
+
+function submitForm(event) {
+    event.preventDefault();
+
+    var email = 
+    document.getElementById("email").value;
+    var password = 
+    document.getElementById("pwd").value;
+    var confirmPassword =
+    document.getElementById("pwd2").value;
+    var phone = 
+    document.getElementById("phone").value;
+    
 }

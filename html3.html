@@ -3,128 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basta Webpage</title>
+    <title>html3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <style>
-        .navbar{
-            margin-bottom: 20px;
-        }
-
-        .tab-content > .tab-pane{
-            display: none;
-        }
-        .tab-content > .tab-pane:first-child{
-            display: block;
-        }
-
-        form{
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        
-        form label{
-            display: block;
-            margin-bottom: 5px;
-
-        }
-
-        form input[type="text"],
-        form input[type="email"],
-        form input[type="password"],
-        form input [type="date"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3 px;
-
-        }
-        form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #45a049;
-        }
-     </style>
+ 
 </head>
 <body>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabLinks = document.querySelectorAll('.nav-link');
-
-            tabLinks.forEach(tab => {
-                tab.addEventListener('click', (event) => {
-                    event.preventDefault();
-
-                    tabLinks.forEach(tab => tab.classList.remove('active'));
-                    event.target.classList.add('active');
-
-                    const targetSectionId = event.target.getAttribute('data-target').substring(1);
-                    const sections = document.querySelectorAll('.tab-pane');
-                    sections.forEach(section => section.classList.remove('show', 'active'));
-
-                    const targetSection = document.getElementById(targetSectionId);
-                    const tabContent = new bootstrap.Tab(targetSection);
-                    tabContent.show();
-                });
-            });
-        });
-        </script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Basta Webpage</a>
+        <a class="navbar-brand" href="#">Yas-Kween</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section1">Introduction</a>
+                    <a class="nav-link" href="#section1" data-toggle="tab">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">About Me</a>
+                    <a class="nav-link" href="#section2" data-toggle="tab">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section3">Contact Me</a>
+                    <a class="nav-link" href="#section3" data-toggle="tab">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="tab-content">
-        <div id="intro" class="tab-pane">
-            <h2>Introduction</h2>
-            <p>edit ko to later basta intro to</p>
+        <div id="section1" class="tab-pane">
+            <h2 id="heading">Kweenling Kingdom</h2>
+            <p>Summon your inner kween! Welcome to the official Kween Yasmin Fan Club! <br>
+            Ready to join the Kweenling Kingdom? Scroll down and fill out the registration form to become and official member. <br>
+        Remember, being a Kweenling isn't just about joining a club - it's about embracing your own inner kween!</p>
         </div>
 
-    <div id="about-me" class="tab-pane">
-        <h2>About Me</h2>
-            <p>Here's some information about me:</p>
-                <ul>
-                    <li>Cyrine H. Acedera</li>
-                    <li>Lives in Baguio City</li>
-                    <li>I am 21 years old</li>
-                    <li>Studying at the University of the Cordilleras</li>
-                    <li>Network and Security Track student</li>
-                    <li>Enjoys traveling and sleeping</li>
-                </ul>           
+    <div id="section2" class="tab-pane">
+        <h2>About Us</h2>
+            <H5>The Kween Yasmin Fan Club</H5>
+            <p>Hey there, kweenlings!</p>
+            <p>Welcome to the official fan club for the one and only kween Yasmin Asistido, the Gen Z superstar who shines bright just by being herself! <br> 
+            We're a community of devoted fans who connect,celebate, and uplift the talented and insipiring Yasmin. <br>
+            From her catchy poetries and energetic dance moves to her relatable personality and positive vibes, <br>
+            we're here to cheer her on as she continues to conquer the internet and beyond!</p>
+
+            <h5>Who are we?</h5>
+            <p>We're a diverse group of fans from all walks of life, connected by our love for Yasmin and here message of authencity. <br>
+            We may come from different backgrounds, but we're united by our shared passion for her poetry, music and positive influence.</p>
+
+            <h5>What Can you expect here?</h5>
+            
+                <li>Exclusive content :
+                    <p>Get the latest scoop on Yasmin's projects, behind-the-scenes glimpses, and fan made creations.</p>
+                </li>
+                <li>A supportive community :
+                    <p>Connect with other Kweenlings, share your love for Yasmin, and build friendships based on shared interests.</p>
+                </li>
+                <li>Positive vibes and empowerment :
+                    <p>Just like Yasmin, we strive to create a space that's inclusive, supportive, and celebrates individuality.</p>
+                </li>
+                <p>Wether you're a new fan or die-hard kweenling, we welcome you with open arms.
+                P.S Don't forget to follow us on social media for even more Kween Yasmin content!</p>
+                       
+            
         </div>
+
         <div id="section3" class="tab-pane">
-            <h2>Contact Me</h2>
-            <p>Third section ng webpage naman itu</p>
+            <h2>Contact Us</h2>
+            <h5>Kweenling Hotline : Your Royal Request Line!</h5>
+            <p>Here are the magical portals you can use to reach us:</p>
+            <ul>
+                <li>
+                    <span class="contact-method email">Email:</span>
+                    Spill the royal tea at <a href="mailto:kweenling143@gmail.com? subject=Kweenling%20Inquiry">kweenling@gmail.com</a>
+                    Don't forget to add "Kweenling Inquiry" in the subject line so your message doesn't get lost in the royal scroll kingdom.
+                </li>
+                <li>
+                    <span class="contact-method twitter">Twitter: </span>
+                    Tweet your kweenly thoughts and questions using the hashtag <span class="ttwitter">#KweenlingHotline</span>. Who knows, 
+                    your message might even get retweeted by the kween herself!
+                </li>
+                <li>
+                    <spa class="contact-method instagram">Instagram:</span>
+                    Slide into our DMs wit your most dazzling Kween Yasmin creations, fan art, or simply a "Hello" from a fellow kweenling"
+                </li>
+            </ul>   
+            <p>Remember, Kweenlings:</p>
+            <p>Be respectful and kind in your messages. We may be sassy, but we still have manners!
+            keep it PG-13, please. The kween wouldn't approve of anything too spicy.</P>
+            
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <form>
         <h2>Registration Form</h2>
         <div class="form-group">
@@ -149,12 +122,19 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <script>
-        $(document).ready (function(){
-            $(.'navbar-toggler').on ('click', function(){
-               $('#navbarNav').collapse('toggle');
-            });
-        });    
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntX5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs cloudfare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src=""></script>
+    <br>
+    <h5>Kween Yasmin Official Account</h>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/OS1ED2quwz">https://t.co/OS1ED2quwz</a><br>New song Kween Yas check it out <br>Composed:Yasmin Asistido <br>Producer &amp; Arranger: David Beja Edulzura<br>Editor: Jj Diaz Labarento<br>Special thanks: <a href="https://twitter.com/VivaArtists?ref_src=twsrc%5Etfw">@VivaArtists</a> <a href="https://twitter.com/Viva_Ent?ref_src=twsrc%5Etfw">@Viva_Ent</a> <a href="https://twitter.com/oomphtvph?ref_src=twsrc%5Etfw">@oomphtvph</a></p>&mdash; KWEEN YASMIN ASISTIDO (OFFICIAL ACCOUNT) (@YasminMarieMAs1) <a href="https://twitter.com/YasminMarieMAs1/status/1297886164418887680?ref_src=twsrc%5Etfw">August 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <h3>Map of Baguio City</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61239.95594476993!2d120.54757512868717!3d16.399553629391693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1706782124344!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
