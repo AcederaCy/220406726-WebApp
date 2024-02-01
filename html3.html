@@ -9,6 +9,8 @@
  
 </head>
 <body>
+    
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Yas-Kween</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +41,7 @@
 
     <div id="section2" class="tab-pane">
         <h2>About Us</h2>
+        <img src="yasmin'.jpg" alt="si Yasmin to">
             <H5>The Kween Yasmin Fan Club</H5>
             <p>Hey there, kweenlings!</p>
             <p>Welcome to the official fan club for the one and only kween Yasmin Asistido, the Gen Z superstar who shines bright just by being herself! <br> 
@@ -51,18 +54,22 @@
             We may come from different backgrounds, but we're united by our shared passion for her poetry, music and positive influence.</p>
 
             <h5>What Can you expect here?</h5>
-            
-                <li>Exclusive content :
-                    <p>Get the latest scoop on Yasmin's projects, behind-the-scenes glimpses, and fan made creations.</p>
-                </li>
-                <li>A supportive community :
-                    <p>Connect with other Kweenlings, share your love for Yasmin, and build friendships based on shared interests.</p>
-                </li>
-                <li>Positive vibes and empowerment :
-                    <p>Just like Yasmin, we strive to create a space that's inclusive, supportive, and celebrates individuality.</p>
-                </li>
+                <ul>
+                    <li>Exclusive content :
+                        <p>Get the latest scoop on Yasmin's projects, behind-the-scenes glimpses, and fan made creations.</p>
+                    </li>
+                    <li>A supportive community :
+                        <p>Connect with other Kweenlings, share your love for Yasmin, and build friendships based on shared interests.</p>
+                    </li>
+                    <li>Positive vibes and empowerment :
+                        <p>Just like Yasmin, we strive to create a space that's inclusive, supportive, and celebrates individuality.</p>
+                    </li>
+                </ul>    
                 <p>Wether you're a new fan or die-hard kweenling, we welcome you with open arms.
                 P.S Don't forget to follow us on social media for even more Kween Yasmin content!</p>
+                <p>Unleash your power of abbreviating with the <abbr title="Kweenlings">KW</abbr> <br>tag!</p>
+                <p>KW is a group of individuals who identify as kween, a term used to describe a person who has only pure confidence and a little bit of talent and has a strong sense of self.</p>
+                <p> <cite>Interview of</cite> <a href="https://www.metroscenemag.com/2021/05/kween-yasmin-interview.html">Kween Yasmin Interview</a>- A must read</p> 
                        
             
         </div>
@@ -74,7 +81,7 @@
             <ul>
                 <li>
                     <span class="contact-method email">Email:</span>
-                    Spill the royal tea at <a href="mailto:kweenling143@gmail.com? subject=Kweenling%20Inquiry">kweenling@gmail.com</a>
+                    Spill the royal tea at <a href="mailto:kweenling143@gmail.com?subject=Kweenling%20Inquiry">kweenling@gmail.com</a>
                     Don't forget to add "Kweenling Inquiry" in the subject line so your message doesn't get lost in the royal scroll kingdom.
                 </li>
                 <li>
@@ -83,10 +90,11 @@
                     your message might even get retweeted by the kween herself!
                 </li>
                 <li>
-                    <spa class="contact-method instagram">Instagram:</span>
+                    <span class="contact-method instagram">Instagram:</span>
                     Slide into our DMs wit your most dazzling Kween Yasmin creations, fan art, or simply a "Hello" from a fellow kweenling"
                 </li>
-            </ul>   
+            </ul>  
+            
             <p>Remember, Kweenlings:</p>
             <p>Be respectful and kind in your messages. We may be sassy, but we still have manners!
             keep it PG-13, please. The kween wouldn't approve of anything too spicy.</P>
@@ -102,15 +110,15 @@
         <h2>Registration Form</h2>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" pattern="[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]{2,}" required>
         </div>
         <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" pattern="^(?=.*[a-z])(?=.[*A-Z])(?=.*/d)[a-zA-Z/d]{8,}$" required>
         </div>
         <div class="form-group">
             <label for="pwd2">Confirm Password</label>
-            <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" name="pswd2" required>
+            <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" name="pswd2" pattern="^(?=.*[a-z])(?=.[*A-Z])(?=.*/d)[a-zA-Z/d]{8,}$" required>
         </div>
         <div class="form-group">
             <label for="dob">Date of Birth:</label>
@@ -118,7 +126,7 @@
         </div>
         <div class="form-group">
             <label for="phone">Phone Number:</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone" pattern="639[0-9]{9}" required>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone" pattern="09[0-9]{9}" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -126,13 +134,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntX5" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdnjs cloudfare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <script src=""></script>
+    
     <br>
-    <h5>Kween Yasmin Official Account</h>
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/OS1ED2quwz">https://t.co/OS1ED2quwz</a><br>New song Kween Yas check it out <br>Composed:Yasmin Asistido <br>Producer &amp; Arranger: David Beja Edulzura<br>Editor: Jj Diaz Labarento<br>Special thanks: <a href="https://twitter.com/VivaArtists?ref_src=twsrc%5Etfw">@VivaArtists</a> <a href="https://twitter.com/Viva_Ent?ref_src=twsrc%5Etfw">@Viva_Ent</a> <a href="https://twitter.com/oomphtvph?ref_src=twsrc%5Etfw">@oomphtvph</a></p>&mdash; KWEEN YASMIN ASISTIDO (OFFICIAL ACCOUNT) (@YasminMarieMAs1) <a href="https://twitter.com/YasminMarieMAs1/status/1297886164418887680?ref_src=twsrc%5Etfw">August 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/OS1ED2quwz">https://t.co/OS1ED2quwz</a><br>New song Kween Yas check it out <br>Composed:Yasmin Asistido <br>Producer &amp; Arranger: David Beja Edulzura<br>Editor: Jj Diaz Labarento<br>Special thanks: <a href="https://twitter.com/VivaArtists?ref_src=twsrc%5Etfw">@VivaArtists</a> <a href="https://twitter.com/Viva_Ent?ref_src=twsrc%5Etfw">@Viva_Ent</a> <a href="https://twitter.com/oomphtvph?ref_src=twsrc%5Etfw">@oomphtvph</a></p>&mdash; KWEEN YASMIN ASISTIDO (OFFICIAL ACCOUNT) (@YasminMarieMAs1) <a href="https://twitter.com/YasminMarieMAs1/status/1297886164418887680?ref_src=twsrc%5Etfw">August 24, 2020</a></blockquote> 
+    <script async src="https://platform.twitter.com/widgets.js" ></script>
     <br>
     <h3>Map of Baguio City</h3>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61239.95594476993!2d120.54757512868717!3d16.399553629391693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1706782124344!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
