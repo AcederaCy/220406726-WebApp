@@ -7,6 +7,9 @@
     <title>Formatting</title>
 
 <style>
+    H2 {
+        color: blue;
+    }
     p.ex1 {
         font-size: 30px;
     }
@@ -22,14 +25,18 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow';
         font-size: 16px;
     }
+    .code {
+        font-family: 'Courier New',  monospace;
+        padding: 2px 4px;
+    }
 </style>    
 </head>
 <body>
-    <h2>abbr example</h2>
+    <h2>abbr tag</h2>
     <p><dfn><abbr title="As Soon As Possible">ASAP</abbr>
     </dfn>stands for "as soon as possible." A synonym you can use instead is without further delay.The documents should be completed without further delay.</p>
     <br>
-    <h2>address example</h2>
+    <h2>address tag</h2>
     <address>
         Article by <a href="mailto:VeronicaPark@gmail.com">Veronica Park</a>.<br>
         Visit us at:
@@ -38,19 +45,19 @@
         OL
     </address>
     <br>
-    <h2>bold text example</h2>
+    <h2>bold text tag</h2>
     <b>Basta example to ng bold text</b>
     <br>
-    <h2>bdo example</h2>
+    <h2>bdo tag</h2>
     <p>This will go from right to the left</p>
     <p> <bdo dir="rtl">This will go from right to the left</bdo></p>
     <br>
-    <h2>big example</h2>
+    <h2>big tag</h2>
     <p>Heavy Traffic in Baguio.</p>
     <p class="ex1">Heavy Traffic in Baguio.</p>
     <p class="ex2">Heavy Traffic in Baguio.</p>
     <br>
-    <h2>blockquote and cite example</h2>
+    <h2>blockquote and cite tag</h2>
     <blockquote cite="https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/">
         <p>Quoting in HTML: Quotations, citations, and blackquotes</p>
         <footer>
@@ -58,39 +65,39 @@
         </footer>
     </blockquote>
     <br>
-    <h2>center Text example</h2>
+    <h2>center tag</h2>
     <div class="center">
         <p>Palala ng palala ang Traffic sa Baguio</p>
     </div>
     <br>
-    <h2>Del example</h2>
+    <h2>Del tag</h2>
     <p>I <del>used to like </del> dislike alcohol and beer</p>
     <br>
-    <h2>dfn example</h2>
+    <h2>dfn tag</h2>
     <p>The <dfn>JavaScript</dfn>is a high level programming language used to make webpages interactive.</p>
     <br>
-    <h2>em example</h2>
+    <h2>em tag</h2>
     <p>The feeling of warm sand between your toes is a true <em>beach</em>experience</p>
     <br>
-    <h2>font example</h2>
+    <h2>font tag</h2>
     <p class="font-text">Sample to ng font na may size.</p>
     <br>
-    <h2>i example</h2>
+    <h2>i tag</h2>
     <p>The sound of ocean waves is so <i>calming</i>.</p>
     <br>
-    <h2>ins example</h2>
+    <h2>ins tag</h2>
     <p>please review the <ins>revised</ins>version of the document is sent.</p>
     <br>
-    <h2>kbd example</h2>
+    <h2>kbd tag</h2>
     <p>To paste a selected, press <kbd>Ctrl</kbd>+ <kbd>C</kbd>.</p>
     <br>
-    <h2>mark example</h2>
+    <h2>mark tag</h2>
     <p>please <mark>submit</mark> your assignments by the deadline.</p>
     <br>
-    <h2>meter example</h2>
+    <h2>meter tag</h2>
     <p>The temperature is currently <meter min="0" max="100" value="40">45 degrees</meter>.</p>
     <br>
-    <h2>pre example</h2>
+    <h2>pre tag</h2>
     <pre>
         function greet() {
             console.log("Hello, world!");
@@ -99,9 +106,59 @@
 
     </pre>
     <br>
-    <h2>progress example</h2>
+    <h2>progress tag</h2>
     <p>Uploading file: <progress value="50" max="100">81%</progress></p>
- 
+    <br>
+    <h2>q tag</h2>
+    <q>Imagination is more important than Knowledge.</q>
+    <br>
+    <h2>rp , rp, ruby tag</h2>
+    <ruby>
+        漢 <rp> (</rp><rt>かん</rt><rp>)</rp>
+        字 <rp>(</rp><rt></rt>じ</rt><rp>)</rp>
+        </rp>
+    </ruby>
+    <br>
+    <h2>s tag</h2>
+    <p>The price of the apple was <s>50 Pesos</s> but now it's 25 pesos.</p>
+    <br>
+    <h2>samp tag</h2>
+    <p>The computer says: <samp>Hello, World!</samp></p>
+    <br>
+    <h2>small tag</h2>
+    <p>This is normal text. <small>This is smaller text.</small></p>
+    <br>
+    <h2>strike tag</h2>
+    <p>The original price was <s>50 Pesos</s>, but now it's 30.</p>
+    <br>
+    <h2>strong tag</h2>
+    <p>This is <strong>important</strong> information.</p>
+    <br>
+    <h2>sub tag</h2>
+    <p>H <sub>2</sub>O</p>
+    <br>
+    <h2>sup tag</h2>
+    <p>E = mc <sup>2</sup></p>
+    <br>
+    <h2>template tag</h2>
+    <template>
+        <p>This information is hidden by default.</p>
+    </template>
+    <br>
+    <h2>time tag</h2>
+    <p>The event starts at <time datetime="2097-12-31T20:00">8:00 pm on December 31,2097</time>.</p>
+    <br>
+    <h2>tt tag</h2>
+    <p>This is  <code class="code">teletype text</code>.</p>
+    <br>
+    <h2>u tag</h2>
+    <p>This is <u>unarticulated text</u> that us styled differently.</p>
+    <br>
+    <h2>var tag</h2>
+    <p>The value of x is <var>x</var>.</p>
+    <br>
+    <h2>wbr tag</h2>
+    <p>This is a sentence with a long email address:doradexplorer@bastamail <wbr> .com</p>
 
 </body>
 </html>
