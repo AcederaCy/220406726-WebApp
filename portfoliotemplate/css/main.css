@@ -74,7 +74,7 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #282525;
 }
 
 /**
@@ -102,7 +102,7 @@ a:hover, a:focus, a:active {
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
-	color: #313131;
+	color: #0e0f0f;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
@@ -156,7 +156,7 @@ p.lead {
 	font-family: "lora-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
-	color: #888888;
+	color: #282525;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -164,7 +164,7 @@ p.lead {
 	}
 }
 em, i, strong, b {
-	font-size: 1.7rem;
+	font-size: 1.7rem; 
 	line-height: 3rem;
 	font-style: normal;
 	font-weight: normal;
@@ -1020,10 +1020,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #b9e8ed;
+	background: #3a697e;
 }
 .grey-section p.lead {
-	color: #7d7d7d;
+	color: #ffffff;
 }
 .section-intro {
 	max-width: 700px;
@@ -1036,12 +1036,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
 	font-size: 3.6rem;
-	color: #313131;
+	color: #d4f5f5;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
-	color: #FF0077;
+	color: #55e0e0;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1085,29 +1085,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {
 	position: fixed;
-	width: 100%;
-	min-height: 66px;
-	z-index: 600;
+	width: 50%;
+	min-height: 6px;
+	z-index: 500;
 }
 header .row {
-	position: relative;
-	min-height: 66px;
+	position: fixed;
+	min-height: 6px;
 }
 header .top-bar {
-	display: block;
-	background: #000000;
-	min-width: 220px;
-	min-height: 66px;
-	position: absolute;
-	left: 90px;
+	display: flex;
+	background-color: #000000;
+	width: fit-content;
+	height: fit-content;
+	position: fixed;
+	left: 0;
 	top: 0;
+	padding: 6px;
 }
 header .logo {
-	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
-	position: relative;
+	display: flex;
+	align-items: center;
+	width: 92px;
+	height: 15px;
+
+
 }
 header .logo a {
 	display: block;
@@ -1117,10 +1119,15 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	width: 100px;
+	height: 100px;
+	background: url("../images/RIRIinc.png") no-repeat center;
+	background-size: contain;
+}
+
+
+	header .menu-toggle {
+		margin-left: 2px;
 }
 
 /**
@@ -1139,7 +1146,7 @@ header .logo a {
 .menu-toggle span {
 	display: block;
 	background-color: #55e0e0;
-	width: 24px;
+	width: 29px;
 	height: 3px;
 	margin-top: -1.5px;
 	font: 0/0 a;
@@ -1196,7 +1203,7 @@ header .logo a {
 	background-color: rgba(255, 0, 119, 0);
 }
 .menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #ff0077;
+	background-color: #55e0e0;
 	-moz-transition-delay: 0s, 0.2s;
 	-o-transition-delay: 0s, 0.2s;
 	-webkit-transition-delay: 0s, 0.2s;
@@ -1252,12 +1259,12 @@ header .logo a {
 	border: none;
 }
 .main-navigation li a:hover {
-	color: #FF0077;
+	color: #55e0e0;
 	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
-	color: #FF0077;
+	color: #55e0e0;
 }
 
 /**
@@ -1490,7 +1497,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: #FFFFFF;
+	background: #77b4ce;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
@@ -1546,7 +1553,7 @@ header .logo a {
 .about-content .info-list li span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
-	color: #888888;
+	color: #4a3f3f;
 	font-size: 1.5rem;
 	line-height: 1;
 }
@@ -1577,8 +1584,7 @@ header .logo a {
 }
 @media only screen and (max-width:768px) {
 	.intro-info img {
-		height: 7.8rem;
-		width: 7.8rem;
+		
 	}
 	.intro-info .lead {
 		padding-left: 11rem;
@@ -1629,7 +1635,7 @@ header .logo a {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+	color: #55e0e0;
 }
 
 #resume .resume-timeline {
@@ -1685,7 +1691,7 @@ header .logo a {
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
-	color: #888888;
+	color: #c3a2a2;
 }
 #resume .timeline-content {
 	margin-left: 35%;
@@ -1790,10 +1796,11 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	background: #FFFFFF;
+	background: #27566b;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
+
 #portfolio .folio-item {
 	padding: 0;
 	position: relative;
@@ -2032,7 +2039,7 @@ header .logo a {
 	text-align: center;
 }
 #cta p.lead {
-	color: #6e6e6e;
+	color: #fff;
 }
 .cta-content {
 	max-width: 640px;
@@ -2067,10 +2074,10 @@ header .logo a {
 	margin-left: -40px;
 }
 .section-ads h2 a, .section-ads h2 a:visited {
-	color: #313131;
+	color: #fff;
 }
 .section-ads span {
-	color: #3F0D39;
+	color: #55e0e0;
 }
 
 /**
@@ -2250,7 +2257,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #contact {
-	background: #151515;
+	background: #52777d;
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
 }
@@ -2362,11 +2369,11 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background: #55e0e0;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #55e0e0;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2380,7 +2387,7 @@ header .logo a {
 	color: #fa0003;
 }
 #message-success {
-	color: #FF0077;
+	color: #55e0e0;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2499,7 +2506,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #FF0077;
+	color: #55e0e0;
 }
 footer .row {
 	max-width: 900px;
@@ -2578,7 +2585,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #55e0e0;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
