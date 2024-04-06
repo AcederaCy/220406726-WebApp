@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar li {
+    margin-right: 20px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #ddd;
+    height: 300px;
+    justify-content: center;
+}
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hero form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#hero form input [type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+
+}
+
+#hero form input [type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+
+#features,
+#how-it-works,
+#pricing {
+    padding: 50px;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+
+}
