@@ -1,116 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 60px;
 }
 
 #header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #333;
+    color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 
 }
 
-h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0.5rem;
+#header-img {
+    width: 100px;
+    height: 100px;
 }
 
-ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
+#nav-bar {
+    margin-left: auto;
 }
 
-li {
-    margin-bottom: 0.5rem;
-}
-p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-#nav-bar ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#nav-bar li {
+.nav-link {
     margin-right: 20px;
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
-#nav-bar a {
-    text-decoration: none;
+.features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.features i {
+    font-size: 24px;
+    margin-right: 10px;
     color: #333;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-    background-color: #ddd;
-    height: 300px;
-    justify-content: center;
-}
-#hero h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#hero form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-#hero form input [type="email"] {
-    padding: 10px;
-    width: 300px;
+.features h3 {
     margin-bottom: 10px;
-
+    font-weight: bold;
+    color: #333;
 }
-
-#hero form input [type="submit"] {
-    padding: 10px 20px;
+.features p {
+    color: #777;
+}
+section {
+    padding: 40px;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.pricing-card {
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.pricing-card .pricing-header {
+    margin-bottom: 20px;
+}
+.pricing-card .price {
+    font-size: 24px;
+}
+.features-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.features-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.features-list li i {
+    margin-right: 5px;
+}
+.pricing-card .features-list li {
+    font-size: 14px;
+    color: #777;
+}
+.btn {
     background-color: #333;
     color: #f2f2f2;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#features,
-#how-it-works,
-#pricing {
-    padding: 50px;
+#form {
+    padding: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#video {
+#email {
     width: 100%;
-    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f2f2f2;
+#submit {
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-footer ul {
-    display: flex;
-    list-style: none;
-}
+@media (max-width: 600px) {
 
-footer li {
-    margin-right: 20px;
-}
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-footer a {
-    text-decoration: none;
-    color: #333;
-
+    #header-img {
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        margin-right: 10px;
+    }
+    section {
+        padding: 20px;
+    }
 }

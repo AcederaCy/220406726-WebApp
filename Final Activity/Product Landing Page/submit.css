@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.success-message {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.success-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.success-message p {
+    color: #777;
+}

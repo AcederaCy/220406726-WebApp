@@ -1,0 +1,254 @@
+77c6fb4,AcederaCy,Mon Feb 12 20:30:01 2024 +0800,AI
+
+26	0	ai.html
+
+3af4fce,AcederaCy,Mon Feb 12 17:49:08 2024 +0800,tips
+
+67	0	timemgmt.html
+
+23b0e10,AcederaCy,Tue Feb 6 21:05:49 2024 +0800,formats example
+
+76	19	formatting_4mat.html
+
+27f8640,AcederaCy,Tue Feb 6 00:17:09 2024 +0800,formatting
+
+0	27	formatting.html
+107	0	formatting_4mat.html
+
+13e4f0b,AcederaCy,Mon Feb 5 17:55:34 2024 +0800,Formats na dipa tapos
+
+27	0	formatting.html
+1	3	html3.html
+
+0034df6,AcederaCy,Mon Feb 5 15:47:31 2024 +0800,Merge branch 'main' of https://github.com/AcederaCy/220406726-WebApp
+
+9bb425d,AcederaCy,Thu Feb 1 20:32:16 2024 +0800,diko alam kung tama
+
+30	21	html3.html
+12	1	style.css
+
+a873da3,AcederaCy,Thu Feb 1 18:57:43 2024 +0800,eedit pa
+
+82	102	html3.html
+42	18	script.js
+107	0	style.css
+
+c78465d,AcederaCy,Thu Feb 1 01:02:47 2024 +0800,mali mali pa to
+
+140	57	html3.html
+
+251e270,AcederaCy,Wed Jan 31 20:08:56 2024 +0800,sample
+
+0	1	HTML3
+57	4	html3.html
+19	0	script.js
+0	0	style.css
+
+72297c9,AcederaCy,Wed Jan 31 16:48:54 2024 +0800,sample sa 3
+
+1	1	HTML Exercises.html
+1	0	HTML3
+24	0	html3.html
+
+11a6d45,AcederaCy,Fri Jan 26 18:04:10 2024 +0800,Updated
+
+13	0	quiz.html
+
+7968961,AcederaCy,Fri Jan 26 17:48:31 2024 +0800,quiz
+
+5	1	HTML Exercises.html
+
+4708c51,AcederaCy,Fri Jan 26 17:38:08 2024 +0800,Quiz
+
+1	0	HTML Exercises.html
+0	0	quiz.html
+
+3e8b1e8,AcederaCy,Wed Jan 24 17:19:33 2024 +0800,Updated
+
+42	43	HTML Exercises.html
+-	-	Spoken Poetry ( SELOS - Kween Yasmin ).mp3 => Spoken.mp3
+0	0	Untitled-1.html
+
+39c2116,AcederaCy,Sat Jan 20 01:15:08 2024 +0800,Updated
+
+57	35	HTML Exercises.html
+-	-	yaskwin.jpg
+-	-	yasmin'.jpg
+
+1efb0db,AcederaCy,Fri Jan 19 17:39:31 2024 +0800,Updated
+
+58	9	HTML Exercises.html
+-	-	Spoken Poetry ( SELOS - Kween Yasmin ).mp3
+
+bbd6fc9,AcederaCy,Thu Jan 18 21:47:33 2024 +0800,updated
+
+-	-	Etude Op. 25 no. 9 in G flat major - 'Butterfly'.mp3
+57	9	HTML Exercises.html
+
+77f3652,AcederaCy,Thu Jan 18 16:55:26 2024 +0800,Updated
+
+21	1	HTML Exercises.html
+
+1a89251,AcederaCy,Thu Jan 18 16:13:22 2024 +0800,New Exercise
+
+8	0	HTML Exercises.html
+
+043a62e,AcederaCy,Mon Jan 15 14:11:13 2024 +0800,Updated
+
+19	6	Resume.html
+0	0	cy.html
+
+1525f0b,AcederaCy,Mon Jan 15 13:37:02 2024 +0800,Merge branch 'main' of https://github.com/AcederaCy/220406726-WebApp
+
+f23a366,AcederaCy,Mon Jan 15 13:33:45 2024 +0800,Updated
+
+1	0	cy.html
+
+b2e746d,AcederaCy,Fri Jan 12 21:35:49 2024 +0800,Rename cy.html to Resume.html
+1	1	cy.html => Resume.html
+
+5066abd,AcederaCy,Fri Jan 12 21:31:31 2024 +0800,Updated html
+
+49	19	cy.html
+
+1f64aa1,AcederaCy,Wed Jan 10 17:58:05 2024 +0800,added cy.html
+
+41	0	cy.html
+
+20613e2,AcederaCy,Tue Jan 9 23:20:36 2024 +0800,Create README.md
+1	0	README.md
+
+c86c4df,AcederaCy,Tue Jan 9 23:17:27 2024 +0800,Created New Text File
+
+0	0	text.txt
+
+82cf193,AcederaCy,Tue Jan 9 23:06:37 2024 +0800,Initial commit
+398	0	.gitignore
+674	0	LICENSE
+77c6fb4,AcederaCy,Mon Feb 12 20:30:01 2024 +0800,AI
+
+26	0	ai.html
+
+3af4fce,AcederaCy,Mon Feb 12 17:49:08 2024 +0800,tips
+
+67	0	timemgmt.html
+
+23b0e10,AcederaCy,Tue Feb 6 21:05:49 2024 +0800,formats example
+
+76	19	formatting_4mat.html
+
+27f8640,AcederaCy,Tue Feb 6 00:17:09 2024 +0800,formatting
+
+0	27	formatting.html
+107	0	formatting_4mat.html
+
+13e4f0b,AcederaCy,Mon Feb 5 17:55:34 2024 +0800,Formats na dipa tapos
+
+27	0	formatting.html
+1	3	html3.html
+
+0034df6,AcederaCy,Mon Feb 5 15:47:31 2024 +0800,Merge branch 'main' of https://github.com/AcederaCy/220406726-WebApp
+
+9bb425d,AcederaCy,Thu Feb 1 20:32:16 2024 +0800,diko alam kung tama
+
+30	21	html3.html
+12	1	style.css
+
+a873da3,AcederaCy,Thu Feb 1 18:57:43 2024 +0800,eedit pa
+
+82	102	html3.html
+42	18	script.js
+107	0	style.css
+
+c78465d,AcederaCy,Thu Feb 1 01:02:47 2024 +0800,mali mali pa to
+
+140	57	html3.html
+
+251e270,AcederaCy,Wed Jan 31 20:08:56 2024 +0800,sample
+
+0	1	HTML3
+57	4	html3.html
+19	0	script.js
+0	0	style.css
+
+72297c9,AcederaCy,Wed Jan 31 16:48:54 2024 +0800,sample sa 3
+
+1	1	HTML Exercises.html
+1	0	HTML3
+24	0	html3.html
+
+11a6d45,AcederaCy,Fri Jan 26 18:04:10 2024 +0800,Updated
+
+13	0	quiz.html
+
+7968961,AcederaCy,Fri Jan 26 17:48:31 2024 +0800,quiz
+
+5	1	HTML Exercises.html
+
+4708c51,AcederaCy,Fri Jan 26 17:38:08 2024 +0800,Quiz
+
+1	0	HTML Exercises.html
+0	0	quiz.html
+
+3e8b1e8,AcederaCy,Wed Jan 24 17:19:33 2024 +0800,Updated
+
+42	43	HTML Exercises.html
+-	-	Spoken Poetry ( SELOS - Kween Yasmin ).mp3 => Spoken.mp3
+0	0	Untitled-1.html
+
+39c2116,AcederaCy,Sat Jan 20 01:15:08 2024 +0800,Updated
+
+57	35	HTML Exercises.html
+-	-	yaskwin.jpg
+-	-	yasmin'.jpg
+
+1efb0db,AcederaCy,Fri Jan 19 17:39:31 2024 +0800,Updated
+
+58	9	HTML Exercises.html
+-	-	Spoken Poetry ( SELOS - Kween Yasmin ).mp3
+
+bbd6fc9,AcederaCy,Thu Jan 18 21:47:33 2024 +0800,updated
+
+-	-	Etude Op. 25 no. 9 in G flat major - 'Butterfly'.mp3
+57	9	HTML Exercises.html
+
+77f3652,AcederaCy,Thu Jan 18 16:55:26 2024 +0800,Updated
+
+21	1	HTML Exercises.html
+
+1a89251,AcederaCy,Thu Jan 18 16:13:22 2024 +0800,New Exercise
+
+8	0	HTML Exercises.html
+
+043a62e,AcederaCy,Mon Jan 15 14:11:13 2024 +0800,Updated
+
+19	6	Resume.html
+0	0	cy.html
+
+1525f0b,AcederaCy,Mon Jan 15 13:37:02 2024 +0800,Merge branch 'main' of https://github.com/AcederaCy/220406726-WebApp
+
+f23a366,AcederaCy,Mon Jan 15 13:33:45 2024 +0800,Updated
+
+1	0	cy.html
+
+b2e746d,AcederaCy,Fri Jan 12 21:35:49 2024 +0800,Rename cy.html to Resume.html
+1	1	cy.html => Resume.html
+
+5066abd,AcederaCy,Fri Jan 12 21:31:31 2024 +0800,Updated html
+
+49	19	cy.html
+
+1f64aa1,AcederaCy,Wed Jan 10 17:58:05 2024 +0800,added cy.html
+
+41	0	cy.html
+
+20613e2,AcederaCy,Tue Jan 9 23:20:36 2024 +0800,Create README.md
+1	0	README.md
+
+c86c4df,AcederaCy,Tue Jan 9 23:17:27 2024 +0800,Created New Text File
+
+0	0	text.txt
+
+82cf193,AcederaCy,Tue Jan 9 23:06:37 2024 +0800,Initial commit
+398	0	.gitignore
+674	0	LICENSE

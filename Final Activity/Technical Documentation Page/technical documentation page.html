@@ -9,55 +9,98 @@
 <body>
     <nav id="navbar">
         <header>Technical Documentation</header>
-        <a href="#Introduction" class="nav-link">Introduction</a>
-        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-        <a href="#Phyton" class="nav-link">Phyton</a>
-        <a href="#Ruby" class="nav-link">Ruby</a>
-        <a href="#Swift" class="Swift">Swift</a>
+        <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+        <a  class="nav-link" href="#Git_Commands">Git Commands</a>
+        <a class="nav-link" href="#Client-Side_Development">Client-Side Development</a>
+        <a class="nav-link" href="#Server-Side_Development">Server-Side Development</a>
+        <a class="nav-link" href="#key_Internet_Protocols">Key Internet Protocols</a>
+        <a class="nav-link" href="#CSS_Style_Rules">CSS Style Rules</a>
+        <a class="nav-link" href="#Windows_Subsystem_for_Linux">Windows Subsystem for Linux</a>
+        <a class="nav-link" href="#Apache_Commands">Apache Commands</a>
+        <a class="nav-link" href="#Apache_Setup">Apache Setup</a>
+        <a class="nav-link" href="Folder_Locations"></a>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <p>This is a sample technical documentation page. It provides information about various programming languages and concepts.</p>
-            <code>console.log ("Hello, world!");</code>
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <p>HTML is the structure of your page. It's like the skeleton of the body.</p>
+            <p>The 'head' part holds links and metadata, and the 'body' part is where  you see all content.</p>
+            <code>&lt;!DOCTYPE&lt;</code>
+            <p>Titles, pharagraphs, and even awesome forms for user inputs can be created.</p>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>Headings are like the title of a book ranging from big to small (h1 to h6).</li>
+                <li>A 'p' tag makes up the pharagraphs where all your info goes</li>
             </ul>
         </section>
 
-        <section class="main-section" id="JavaScript_and_Java">
-            <header>JavaScript and Java</header>
-            <p>JavaScript and Java are both programming languages, but they have some key differences. JavaScript i a client-side scripting language, while Jave is a general-purpose programming language.</p>
-            <code>let x = 5;</code>
+        <section class="main-section" id="Git_Commands">
+            <header>Git Commands</header>
+            <p>To change your last commit message, "amend" is your go-to</p>
+            <p>"Revert" lests you undo things without erasing your history</p>
+            <code>git commit --amend</code>
+            <code>git revert</code>
+        </section>
+
+        <section class="main-section" id="Client-Side_Development">
+            <header>Client-Side Development</header>
+            <p>I learned about making websites interactive and stylish, all from the browser's side.</p>
             <ul>
-                <li>JavaScript is used for web development.</li>
-                <li>Java is used for building enterprised-scale applications</li>
-                <li>JavaScript is dynamically typed, while java is statically typed</li>
+                <li>JavaScript adds all the dynamic magic.</li>
+                <li>HTML amd CSS for looks and structure.</li>
             </ul>
         </section>
 
-        <section class="main-section" id="Phyton">
-            <header>Phyton</header>
-            <p>Phyton is a high-level, interpreted programming language. It is known for its simplicity and readability, and is often used for data analysis, machine learning, and web development.</p>
-            <code>print("Hello, world")</code>
-            <ul>
-                <li>Phyton is a general-purpose programming languange</li>
-                <li>Phyton is used for data analysis and machine learning</li>
-                <li>Phyton is know for its simplicity and readability</li>
-            </ul>
+        <section class="main-navigation" id="Server-Side_Development">
+            <header>Server-Side Development</header>
+            <p>Server magic happens in the background, handling data and users.</p>
+            <p>Used languages like phyton and JavaScript (Node.js).</p>
+            <li>Creating dynamic web content is key.</li>
         </section>
 
-        <section class="main-navigation" id="Swift">
-            <header>Swift</header>
-            <p>Swift is a general-purpose, compiled programming language developed by Apple. It is used for developing IOS, macOS, watchOS, and tvOS applications.</p>
-            <code>print("Hello,world!")</code>
+        <section class="main-section" id="key_Internet_Protocols">
+            <header>Key Internet Protocols</header>
+            <p>HTTP and HTTPS are the backbone for web communication.</p>
+            <code>TCP/IP ensures data travels safely between devices.</code>
+        </section>
+
+        <section class="main-section" id="CSS_Style_Rules">
+            <header>CSS Style Rules</header>
+            <p>Dressing up the websites with colors and layouts is fun using CSS.</p>
+            <p>Selectors and declarations give me control over my design.</p>
+        </section>
+
+        <section class="main-section" id="Windows_Subsystem_for_Linux">
+            <header>Windows Subsystem for Linux</header>
+            <p>WSL transforms your Windows environment with Linux capabilities.</p>
+            <code>wsl --install</code> :installs linux on your computer
+            <code>wsl</code> : opens Linux in your terminal
+            <code>clear</code> : clears the terminal screen
+            <code>logout</code> or <code>exit</code> : returns to command prompt in Windows
+        </section>
+
+        <section class="main-section" id="Apache_Commands">
+            <header>Apache Commands</header>
+            <p>Manage your web servers settings via these Apache Terminal commands</p>
+            <code>sudo apt update</code> : updates your Linux before installation of Apache
+            <code>sudo apt upgrade</code> : upgrades linux
+            <code>sudo service apache2 start</code> : starts the Apache server
+        </section>
+
+        <section class="main-section" id="#Apache_Setup">
+            <header>Apache Setup</header>
+            <p>Configure your apache settings for your projects.</p>
+            <code>sudo nano</code> : open text editor
+            <code>sudo chown -R username path/to/working/directory</code> : make folder writable
+            <code>sudo nano /etc/apache2/sites-available/000-default.conf</code>
+            <p>Enable site; look for document root and change it to your desired folder to run in localhost.</p>
+        </section>
+
+        <section class="main-section" id="Folder_Locations">
+            <header>Folder Locations</header>
             <ul>
-                <li>Swift is a general-purpose programming language</li>
-                <li>Swift is used for developing iOS, macOS, watchOS, and tvOS applications</li>
-                <li>Swift is a compiled languange,which means it is faster than interpreted languages</li>
+                <li>Apache Folder - <code>etc/apache2</code></li>
+                <li>Document Root - <code>/var/www/</code></li>
             </ul>
         </section>
     </main>
